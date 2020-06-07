@@ -48,7 +48,7 @@ namespace Laba37
 
         private void Disciplina_FormClosing(object sender, FormClosingEventArgs e)
         {
-
+            this.дисциплиныTableAdapter.Update(this.unverDataSet.дисциплины);
         }
     }
 }

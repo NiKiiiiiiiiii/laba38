@@ -142,27 +142,27 @@
             // дисциплиныToolStripMenuItem
             // 
             this.дисциплиныToolStripMenuItem.Name = "дисциплиныToolStripMenuItem";
-            this.дисциплиныToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.дисциплиныToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
             this.дисциплиныToolStripMenuItem.Text = "Дисциплины";
             this.дисциплиныToolStripMenuItem.Click += new System.EventHandler(this.дисциплиныToolStripMenuItem_Click);
             // 
             // кафедраToolStripMenuItem
             // 
             this.кафедраToolStripMenuItem.Name = "кафедраToolStripMenuItem";
-            this.кафедраToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.кафедраToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
             this.кафедраToolStripMenuItem.Text = "Кафедра ";
             // 
             // преподавательToolStripMenuItem
             // 
             this.преподавательToolStripMenuItem.Name = "преподавательToolStripMenuItem";
-            this.преподавательToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.преподавательToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
             this.преподавательToolStripMenuItem.Text = "Преподаватель ";
             this.преподавательToolStripMenuItem.Click += new System.EventHandler(this.преподавательToolStripMenuItem_Click);
             // 
             // расписаниеToolStripMenuItem
             // 
             this.расписаниеToolStripMenuItem.Name = "расписаниеToolStripMenuItem";
-            this.расписаниеToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.расписаниеToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
             this.расписаниеToolStripMenuItem.Text = "Расписание ";
             this.расписаниеToolStripMenuItem.Click += new System.EventHandler(this.расписаниеToolStripMenuItem_Click);
             // 
@@ -180,6 +180,7 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Kafedra";
             this.Text = "Kafedra";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Kafedra_FormClosing);
             this.Load += new System.EventHandler(this.Kafedra_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.кафедраBindingSource)).EndInit();

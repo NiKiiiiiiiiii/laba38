@@ -45,5 +45,10 @@ namespace Laba37
         {
             
         }
+
+        private void Преподаватель_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            this.преподавательTableAdapter.Update(this.unverDataSet.преподаватель);
+        }
     }
 }

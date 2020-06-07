@@ -26,8 +26,7 @@ namespace Laba37
         {
             // TODO: данная строка кода позволяет загрузить данные в таблицу "unverDataSet.расписание". При необходимости она может быть перемещена или удалена.
             this.расписаниеTableAdapter.Fill(this.unverDataSet.расписание);
-            // TODO: данная строка кода позволяет загрузить данные в таблицу "unverDataSet.дисциплины". При необходимости она может быть перемещена или удалена.
-            this.дисциплиныTableAdapter.Fill(this.unverDataSet.дисциплины);
+            
 
         }
 
@@ -52,6 +51,11 @@ namespace Laba37
         private void расписаинеToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void Raspisaniye_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            this.расписаниеTableAdapter.Update(this.unverDataSet.расписание);
         }
     }
 }

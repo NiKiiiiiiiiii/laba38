@@ -41,5 +41,10 @@ namespace Laba37
             Raspisaniye raspisaniye = new Raspisaniye();
             raspisaniye.Show();
         }
+
+        private void Kafedra_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            this.кафедраTableAdapter.Update(this.unverDataSet.кафедра);
+        }
     }
 }

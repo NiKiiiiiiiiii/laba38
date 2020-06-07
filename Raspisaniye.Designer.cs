@@ -38,16 +38,16 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.номердисциплиныDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.дисциплиныBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.unverDataSet = new Laba37.unverDataSet();
-            this.дисциплиныTableAdapter = new Laba37.unverDataSetTableAdapters.дисциплиныTableAdapter();
             this.расписаниеBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.unverDataSet = new Laba37.unverDataSet();
+            this.дисциплиныBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.дисциплиныTableAdapter = new Laba37.unverDataSetTableAdapters.дисциплиныTableAdapter();
             this.расписаниеTableAdapter = new Laba37.unverDataSetTableAdapters.расписаниеTableAdapter();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.дисциплиныBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.unverDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.расписаниеBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.unverDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.дисциплиныBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -74,28 +74,28 @@
             // дисциплиныToolStripMenuItem
             // 
             this.дисциплиныToolStripMenuItem.Name = "дисциплиныToolStripMenuItem";
-            this.дисциплиныToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.дисциплиныToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
             this.дисциплиныToolStripMenuItem.Text = "Дисциплины";
             this.дисциплиныToolStripMenuItem.Click += new System.EventHandler(this.дисциплиныToolStripMenuItem_Click);
             // 
             // кафедраToolStripMenuItem
             // 
             this.кафедраToolStripMenuItem.Name = "кафедраToolStripMenuItem";
-            this.кафедраToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.кафедраToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
             this.кафедраToolStripMenuItem.Text = "Кафедра";
             this.кафедраToolStripMenuItem.Click += new System.EventHandler(this.кафедраToolStripMenuItem_Click);
             // 
             // преподавательToolStripMenuItem
             // 
             this.преподавательToolStripMenuItem.Name = "преподавательToolStripMenuItem";
-            this.преподавательToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.преподавательToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
             this.преподавательToolStripMenuItem.Text = "Преподаватель ";
             this.преподавательToolStripMenuItem.Click += new System.EventHandler(this.преподавательToolStripMenuItem_Click);
             // 
             // расписаинеToolStripMenuItem
             // 
             this.расписаинеToolStripMenuItem.Name = "расписаинеToolStripMenuItem";
-            this.расписаинеToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.расписаинеToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
             this.расписаинеToolStripMenuItem.Text = "Расписаине ";
             this.расписаинеToolStripMenuItem.Click += new System.EventHandler(this.расписаинеToolStripMenuItem_Click);
             // 
@@ -126,24 +126,24 @@
             this.номердисциплиныDataGridViewTextBoxColumn.Name = "номердисциплиныDataGridViewTextBoxColumn";
             this.номердисциплиныDataGridViewTextBoxColumn.Width = 150;
             // 
-            // дисциплиныBindingSource
+            // расписаниеBindingSource
             // 
-            this.дисциплиныBindingSource.DataMember = "дисциплины";
-            this.дисциплиныBindingSource.DataSource = this.unverDataSet;
+            this.расписаниеBindingSource.DataMember = "расписание";
+            this.расписаниеBindingSource.DataSource = this.unverDataSet;
             // 
             // unverDataSet
             // 
             this.unverDataSet.DataSetName = "unverDataSet";
             this.unverDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
+            // дисциплиныBindingSource
+            // 
+            this.дисциплиныBindingSource.DataMember = "дисциплины";
+            this.дисциплиныBindingSource.DataSource = this.unverDataSet;
+            // 
             // дисциплиныTableAdapter
             // 
             this.дисциплиныTableAdapter.ClearBeforeFill = true;
-            // 
-            // расписаниеBindingSource
-            // 
-            this.расписаниеBindingSource.DataMember = "расписание";
-            this.расписаниеBindingSource.DataSource = this.unverDataSet;
             // 
             // расписаниеTableAdapter
             // 
@@ -159,13 +159,14 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Raspisaniye";
             this.Text = "Raspisaniye";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Raspisaniye_FormClosing);
             this.Load += new System.EventHandler(this.Raspisaniye_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.дисциплиныBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.unverDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.расписаниеBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.unverDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.дисциплиныBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
